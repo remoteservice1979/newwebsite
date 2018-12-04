@@ -1,6 +1,6 @@
 import Color from './Color'
 
-const primary = '#0C6A8A'
+const primary = '#34495e'
 
 const colorOptions = {
   primary,

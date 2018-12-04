@@ -43,10 +43,10 @@ const NavbarStyles = styled.header`
       position: relative;
       perspective: 1000px;
     }
-
+    .LOGO{color:#fff;}
     .logo {
       flex: 0 0 auto;
-      width: 120px;
+      width: 20%;
       margin: 8px 0 5px 10px;
       transition: all .3s ease;
       .hide {
@@ -267,48 +267,48 @@ const links = [
     name: 'Home',
     path: '/'
   },
+  // {
+  //   name: 'Why Us?',
+  //   path: '/rank-tracker-comparison'
+  // },
   {
-    name: 'Why Us?',
-    path: '/rank-tracker-comparison'
-  },
-  {
-    name: 'Features',
+    name: 'Supports',
     path: '/features',
     links: [
       {
-        name: 'Brand Monitoring',
-        path: '/features#brands'
+        name: 'Angular',
+        path: '/features#ANGULAR'
       },
       {
-        name: 'Competitive Analysis',
-        path: '/features#competition'
+        name: 'React JS/Redux',
+        path: '/features#REACTJS'
       },
       {
-        name: 'Scheduling',
-        path: '/features#scheduling'
-      },
-      {
-        name: 'Data',
-        path: '/features#data'
-      },
-      {
-        name: 'Agency Tools',
-        path: '/features#agencies'
-      },
-      {
-        name: 'Reputation Management',
-        path: '/features#reputation'
-      },
-      {
-        name: 'Integrations',
-        path: '/features#integrations'
+        name: 'Blockchain',
+        path: '/features#BLOCKCHAIN'
       }
+      // {
+      //   name: 'Data',
+      //   path: '/features#data'
+      // },
+      // {
+      //   name: 'Agency Tools',
+      //   path: '/features#agencies'
+      // },
+      // {
+      //   name: 'Reputation Management',
+      //   path: '/features#reputation'
+      // },
+      // {
+      //   name: 'Integrations',
+      //   path: '/features#integrations'
+      // }
     ]
   },
-  {
-    name: 'Pricing',
-    path: '/pricing'
-  },
+  // {
+  //   name: 'Pricing',
+  //   path: '/pricing'
+  // },
   // {
   //   name: 'Dev Blog',
   //   path: '/devblog',
@@ -358,12 +358,12 @@ export default class Navbar extends Component {
             className="logo"
             to="/"
             itemScope
-            itemType="http://schema.org/Organization"
+            itemType="https://remoteservicesupports.herokuapp.com/"
             itemProp="url"
-            href="https://nozzle.io/"
+            href="https://remoteservicesupports.herokuapp.com/"
           >
             <span className="hide">Home</span>
-            <img src="/img/logo-small.svg" alt="logo" itemProp="logo" />
+            <div className="LOGO">REMOTE SERVICE SUPPORTS</div>
           </Link>
           <div
             className="menuToggle"
@@ -396,11 +396,6 @@ export default class Navbar extends Component {
                 >
                   {links.map(LinkItem)}
                 </div>
-                <Link className="trial" to="/#contact" onClick={closeMenu}>
-                  <Button color="success" burst>
-                    Start Trial
-                  </Button>
-                </Link>
               </nav>
             )}
           </ClickOutside>

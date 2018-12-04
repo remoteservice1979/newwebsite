@@ -1,8 +1,8 @@
 {
-  "name": "nozzle-website",
+  "name": "static-website",
   "description": "",
   "version": "1.0.0",
-  "author": "Tanner Linsley <tannerlinsley@gmail.com>",
+  "author": "rss <rss@gmail.com>",
   "keywords": [],
   "license": "MIT",
   "main": "index.js",

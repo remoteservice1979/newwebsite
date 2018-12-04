@@ -21,25 +21,13 @@ const FeaturesNav = props => (
     <div className="inner">
       <ul data-gumshoe>
         <li>
-          <Link to="/features/#brands">Brand Monitoring</Link>
+          <Link to="/features/#ANGULAR">ANGULAR</Link>
         </li>
         <li>
-          <Link to="/features/#competition">Competitive Analysis</Link>
+          <Link to="/features/#REACTJS">REACTJS</Link>
         </li>
         <li>
-          <Link to="/features/#scheduling">Scheduling</Link>
-        </li>
-        <li>
-          <Link to="/features/#data">Data</Link>
-        </li>
-        <li>
-          <Link to="/features/#agencies">Agency Tools</Link>
-        </li>
-        <li>
-          <Link to="/features/#reputation">Reputation Management</Link>
-        </li>
-        <li>
-          <Link to="/features/#integrations">Integrations</Link>
+          <Link to="/features/#BLOCKCHAIN">BLOCKCHAIN</Link>
         </li>
       </ul>
     </div>
@@ -82,7 +70,7 @@ const FeaturesNavDiv = styled(FeaturesNav)`
   + * {
     padding-top: 50px;
   }
-
+  
   ${below900} {
     height: 50px;
     &:after {
@@ -133,78 +121,31 @@ const SectionBrandsCmp = props => (
   <section {...props}>
     <Container>
       <H2 className="badge">
-        <Strong>
-          <Span>Brand</Span>
-          <div className="line1" />
-          <div className="line2" />
-          <div className="line3" />
-          <div className="line4" />
-        </Strong>
-        <Span>Tracking &amp; Monitoring</Span>
+       
+        <Span>ANGULAR</Span>
       </H2>
-      <div className="images">
-        <div className="domain-wrap">
-          <H4>Other Rank Trackers</H4>
-          <div className="domain">
-            <div className="img">
-              <Img src="/img/domainEdit.png" />
-              <Img src="/img/cnn-small.png" />
+        <section>
+            <div className="AngularTxt">
+                Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.
+
+The framework consists of several libraries, some of them core and some optional.
+
+You write Angular applications by composing HTML templates with Angularized markup, writing component classes to manage those templates, adding application logic in services, and boxing components and services in modules.
+
+Then you launch the app by bootstrapping the root module. Angular takes over, presenting your application content in a browser and responding to user interactions according to the instructions you've provided.
             </div>
-          </div>
-        </div>
-        <div className="vs">
-          <Span>VS</Span>
-        </div>
-        <div className="brand-wrap">
-          <Img src="/img/logo-blue.png" />
-          <div className="brand">
-            <div className="img">
-              <Img src="/img/brandEdit.png" />
-              <Img src="/img/cnn.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="one">
-        <H4>100% SERP Visibility</H4>
-        <P>
-          With other tools, you are tied to a single domain, but with Nozzle,{' '}
-          <Strong>you can track as many SERP results as you want.</Strong> We make this easy by
-          using Brands, Properties, and URLs instead of single domains. If that's not enough, we
-          even let you build custom rules to get as specific as you want! These features allow
-          Nozzle to perform powerful competitive analysis between other brands, individual
-          properties, and even URLs.
-        </P>
-      </div>
-      <div className="two">
-        <H4>Use Cases</H4>
-        <Ul>
-          <Li>
-            Track{' '}
-            <Strong>
-              external blogs, PR releases, guest posts on external domains, Quora results
-            </Strong>
-          </Li>
-          <Li>
-            Track <Strong>using Custom Rules</Strong>
-          </Li>
-          <Li>Automatic &amp; Dynamic Competitive Views</Li>
-        </Ul>
-      </div>
-      <Center>
-        <Link to="/features/#trial">
-          <Button color="success" burst>
-            Start tracking today!
-          </Button>
-        </Link>
-      </Center>
+        </section>
     </Container>
   </section>
 )
 
 const SectionBrands = styled(SectionBrandsCmp)`
   ${section} padding-top: 15rem;
-
+.AngularTxt{font-size: 15px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #333;
+}
   .badge {
     text-align: center;
     white-space: nowrap;
@@ -396,43 +337,12 @@ const SectionCompetitionCmp = props => (
     <Container>
       <H2>
         <Img src="/img/competitorWaves.png" />
-        <div>Competitive Analysis</div>
+        <div>REACT JS</div>
       </H2>
-      <div className="one">
-        <div className="left">
-          <Img src="/img/brands.png" />
-        </div>
-        <div className="right">
-          <H4>Unlimited competitors for free.</H4>
-          <P>
-            As opposed to tracking individual domains, tracking brands makes it easy to monitor
-            their every move. You can do this by <Strong>brand, property or even URL</Strong> to get
-            aggreggated or detailed comparisons as needed.
-          </P>
-        </div>
+      <div className="AngularTxt">
+        RSS React.js Training makes you learn, a front-end JavaScript Library builds usable and highly interactive UI components and mobile applications. React is modular, maintainable, flexible and scalable. All these features make it an ideal choice for use in various applications.
       </div>
-      <div className="two">
-        <div className="left">
-          <Img src="/img/domains.png" />
-        </div>
-        <div className="right">
-          <H4>Share of Voice &amp; Rewriting History</H4>
-          <P>
-            Don't know who your competitors are? Just take a look at our share-of-voice dashboard to
-            immediately detect unknown competitors by <Strong>Domain, Subdomain, and URL</Strong>.
-            If you like what you see, add them as a named competitor and we will{' '}
-            <Strong>rewrite all of your historical data</Strong> to include your newfound
-            competition! It's like having a time machine!
-          </P>
-        </div>
-      </div>
-      <Center>
-        <Link to="/features/#trial">
-          <Button color="success" burst>
-            Show My Competitors
-          </Button>
-        </Link>
-      </Center>
+      
     </Container>
   </section>
 )
@@ -451,6 +361,11 @@ const SectionCompetition = styled(SectionCompetitionCmp)`
   strong {
     color: ${Theme.colors.primaryLighter};
   }
+  .AngularTxt{font-size: 15px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #333;
+}
   .one,
   .two {
     flex: 1 0 auto;
@@ -505,26 +420,15 @@ const SectionScheduling = styled(props => (
     <Container>
       <Center>
         <Img src="/img/scheduleDots.png" />
-        <H2>Flexible Scheduling</H2>
+        <H2>BLOCKCHAIN</H2>
         <H6>
-          Not all keywords are created equal. Thankfully, Nozzle is{' '}
-          <Strong>
-            the first and only rank tracker to offer flexible and real-time schedules
-          </Strong>. Instead of forcing you to pay the same price to track your long-tail keywords
-          as your head terms, Nozzle let's you split your keywords into as many different scheduling
-          buckets you want.{' '}
+            A blockchain is a digitized, decentralized, public ledger of all cryptocurrency transactions.Doing so creates an indelible record that cannot be changed; furthermore, the record's authenticity can be verified by the entire community using the blockchain instead of a single centralized authority.
         </H6>
-        <Img src="/img/schedules.png" className="scheduleImg" />
-        <P>
-          This way, you can <Strong>closely monitor your most important keywords</Strong> daily,
-          hourly or even every 5 minutes, but still <Strong>keep an eye on thousands more</Strong>{' '}
-          by scheduling them weekly or monthly without breaking the bank.
-        </P>
-        <Link to="/features/#trial">
-          <Button color="success" burst>
-            Try Flexible Scheduling
-          </Button>
-        </Link>
+        <div className="AngularTxt">
+            <strong>Use Case: Contract Management System (CMS)</strong><br/>
+            <strong>Problem Statement:</strong> In booking current contracting system, to book an accommodation/hotel room, a single contract is recorded multiple times based upon the number of market sources, each source market are unable to sync and yield based upon the needs.
+<br/><strong>Solution: </strong>There is a need for a single Smart contract across multiple source markets which should be configurable, define rules to determine appropriate source markets demands, provide options to capture room types and fulfill accommodation needs. CMS is built on hyperledger blockchain, which enables to create a single Smart contract created across all source markets, provides options to demand for more accommodations and improve business by selling accommodation till last minute.
+        </div>
       </Center>
     </Container>
   </section>
@@ -534,6 +438,12 @@ const SectionScheduling = styled(props => (
     margin: 0 auto 20px;
     width: 250px;
   }
+  .AngularTxt{font-size: 15px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #333;
+}
+.AngularTxt strong{font-weight:bold;}
   h2 {
     text-align: center;
     margin: 0 0 3rem;
@@ -1198,17 +1108,12 @@ export default class Features extends Component {
   render () {
     return (
       <Page>
-        <Head title="Features | Nozzle" />
+        <Head title="Features" />
         <Main>
           <FeaturesNavDiv />
-          <SectionBrands id="brands" />
-          <SectionCompetition id="competition" />
-          <SectionScheduling id="scheduling" />
-          <SectionData id="data" />
-          <SectionAgencies id="agencies" />
-          <SectionReputation id="reputation" />
-          <SectionIntegrations id="integrations" />
-          <SectionContactUs id="trial" />
+          <SectionBrands id="ANGULAR" />
+          <SectionCompetition id="REACTJS" />
+          <SectionScheduling id="BLOCKCHAIN" />
         </Main>
       </Page>
     )

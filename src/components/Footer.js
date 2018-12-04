@@ -21,7 +21,7 @@ export default class Footer extends Component {
     return (
       <FooterStyles>
         <div className="copyright">
-          &copy; {`20${new Date().getYear() - 100}`} Nozzle Corp.
+          &copy; {`20${new Date().getYear() - 100}`} REMOTE SERVICE SUPPORTS
         </div>
       </FooterStyles>
     )

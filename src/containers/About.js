@@ -83,7 +83,7 @@ const AboutUsDiv = styled.div`
     min-height: 108vh;
     align-items: center;
     justify-content: center;
-    background-image: url('/img/about/aboutus.jpg');
+   background:rgb(104, 141, 177);
     background-size: cover;
     background-position: top;
     color: #fff;
@@ -97,7 +97,7 @@ const AboutUsDiv = styled.div`
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgb(104, 141, 177);
     }
     .-content {
       z-index: 1;
@@ -180,6 +180,8 @@ const AboutUsDiv = styled.div`
         width: 400px;
       }
     }
+
+
     .event {
       display: flex;
       flex-wrap: wrap;
@@ -223,6 +225,25 @@ const AboutUsDiv = styled.div`
       }
     }
   }
+
+    .aboutus{padding:5%;}
+  .aboutusFst h5{font-size: 22px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;}
+  .aboutusSec{font-weight: 500;
+    padding: 10px 0;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: 15px;}
+    .aboutusThrd{font-weight: 500;
+    padding: 10px 0;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: 15px;}
+
+
+
   .team {
     padding: 20px;
     padding-top: 100px;
@@ -239,7 +260,7 @@ const AboutUsDiv = styled.div`
     }
     .member {
       flex: 1 1 31%;
-      margin: 18% 1% 20px;
+      margin: 0 1% 20px;
       position: relative;
       padding: 120px 20px 20px;
       text-align: center;
@@ -385,18 +406,15 @@ export default class About extends Component {
   render () {
     return (
       <Page>
-        <Head title="About Us | Nozzle" />
+        <Head title="About Us" />
         <Main>
           <AboutUsDiv>
             <section className="intro">
               <div className="-background" />
               <div className="-content">
-                <H1>It started with 3 guys who love SEO</H1>
+                <H1>ABOUT US</H1>
                 <P>
-                  Working at an agency, we set out to find the best tools we could get. We needed
-                  something that could keep up with clients from Dell down to Bob's Pickles, but
-                  nothing lived up to our wildest SEO dreams. So we created Nozzle, the rank tracker
-                  we couldn't live without.
+                 We understand that you have worked extremely hard to get to where you are and you are backed by credentials that support your passion.
                 </P>
               </div>
               <Link className="next" to="/about/#timeline">
@@ -419,226 +437,42 @@ export default class About extends Component {
               </Link>
             </section>
 
-            <section className="timeline" id="timeline">
-              <H2 className="density">This is our density...</H2>
-
-              <div className="delorianSide">
-                <div>
-                  <Img src="/img/about/delorianSide.png" />
+            <section className="aboutus">
+                <div className="aboutusFst">
+                    <h5>About us</h5>
                 </div>
-              </div>
-
-              <div className="destiny">
-                <H2>I mean, our destiny!</H2>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <Img src="/img/about/seo.png" />
+                <div className="aboutusSec">
+                    We understand that you have worked extremely hard to get to where you are and you are backed by credentials that support your passion. But most employers and several organizations now looks for more competency proof to complement those credentials, so how do you intend to stand out from the competition? RSS is a live and interactive e-learning platform that offers professional online education to help companies improve their profitability drastically. We provide several cyber training in various fields which includes but not limited to: Devop, Business Analytics, Database administration, VMware, Selenium, Amazon Web Services, Bigdata, Python, Identity Management, IT service, Management, NoSQL DB Courses, IT Networking and Server Administration Courses.
                 </div>
-                <div className="connector" />
-                <div className="right">
-                  <H4>July 2012</H4>
-                  <P>
-                    At SEO.com, Derek (VP of Tech) and Joe (Lead Developer) are tasked with
-                    evaluating any and all rank tracking software.
-                  </P>
+                <div className="aboutusThrd">
+                    Our courses are perfectly designed for individuals seeking further professional recognition and independent certification to enhance their course outcome and qualities. We are renown for building pathways to successful careers and with over 5 years of certification program, we have acquired the needed experience to partner with you in the development and delivery of a recognized and sustainable career for your profession.
                 </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <H4>June 2013</H4>
-                  <P>
-                    We have by now tried many options including Conductor, BrightEdge, SEO Clarity,
-                    and Moz, but walk away unsatisfied.
-                  </P>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <Img src="/img/about/competitors.png" />
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <Img src="/img/logo-blue.png" />
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <H4>April 2014</H4>
-                  <P>
-                    Nozzle is incorporated with the goal of building the best rank tracker in the
-                    world.
-                  </P>
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <H4>May 2015</H4>
-                  <P>Nozzle's first customer is acquired!</P>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <Img
-                    src="/img/about/firstCustomer.png"
-                    style={{
-                      width: '300px',
-                    }}
-                  />
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <Img src="/img/about/billion.png" />
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <H4>July 2015</H4>
-                  <P>Nozzle collects 1 billion data points in a single day</P>
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <H4>October 2015</H4>
-                  <P>
-                    Nozzle launches multiple scheduling options, the first ever in the industry.
-                  </P>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <Img src="/img/about/schedulesMini.png" />
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <Img src="/img/about/techstars.png" />
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <H4>February 2016</H4>
-                  <P>Nozzle participates in the Techstars Kansas City accelerator program.</P>
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <H4>March 2016</H4>
-                  <P>
-                    Nozzle releases Chart.js 2.0 and trends #1 on Github and Product Hunt. Developed
-                    by our own Tanner Linsley and good friend Evert Timberg, it's now faster than
-                    ever, offers 8 flexible chart types and is even more extensible.
-                  </P>
-                  <br />
-                  <Link to={'https://github.com/chartjs/chart.js'}>
-                    <Button size="sm">View Chart.js on Github</Button>
-                  </Link>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <a
-                    href="https://github.com/chartjs/chart.js"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Img src="/img/about/chartjs.png" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <a
-                    href="https://github.com/jumpsuit/jumpsuit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Img src="/img/about/jumpsuit.png" />
-                  </a>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <H4>May 2016</H4>
-                  <P>
-                    Jumpsuit is released and trends #1 on Github and Product Hunt. Initially
-                    developed for Nozzle to utilize React and Redux, it has become a popular
-                    javascript framework for building web applications with minimal overhead or
-                    boilerplate.
-                  </P>
-                  <br />
-                  <Link to={'https://github.com/jumpsuit/jumpsuit'}>
-                    <Button size="sm">View Jumpsuit on Github</Button>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="event">
-                <div className="left">
-                  <H4>June 2016</H4>
-                  <P>Public Launch Day!</P>
-                </div>
-                <div className="connector" />
-                <div className="right">
-                  <Img src="/img/about/smx.png" />
-                </div>
-              </div>
-
-              <H2 className="roads">Where we're going, we don't need roads...</H2>
-
-              <div className="delorianBack">
-                <Img src="/img/about/delorianBack.png" />
-              </div>
             </section>
 
+
             <section className="team">
-              <H2>Meet the Team</H2>
+              
               <div className="inner">
                 <div className="member derek">
-                  <div className="member-image">
-                    <div className="inner" />
-                  </div>
-                  <H3>Derek Perkins</H3>
-                  <H6>CEO</H6>
+                 
+                  <H3>Learn Online</H3>
+                
                   <P>
-                    Derek is a go developer. He writes a lot of backend code, but also does the
-                    business side. He is an experienced entrepreneur, and enjoys the startup
-                    battlefield. He enjoys short walks on the beach and triple-OREO ice cream.{' '}
+                   Don’t worry about keeping up with your day to day task and at the same time meeting up with your training. Everything is accessible on the go without interrupting your personal life.
                   </P>
                 </div>
                 <div className="member joe">
-                  <div className="member-image">
-                    <div className="inner" />
-                  </div>
-                  <H3>Joe Bergevin</H3>
-                  <H6>Backend CTO</H6>
+                  
+                  <H3>Quality</H3>
                   <P>
-                    Joe has a proven track record in designing tools that improve efficiency and
-                    deliver optimal outcomes for clients and companies. An innovative designer and
-                    developer, Joe has used a variety of programming languages, most recently
-                    specializing in Go (Golang) and PHP. Joe’s love for programming dates back to
-                    his teenage years when he spent his spare time in school programming games for
-                    his graphic calculator to share with his friends - earning him the nickname "TI
-                    Joe".
+                   we're proud of our unrivalled reputation in the interactive e-learning training platform, and known for our unmatched support while juggling work and study commitments. Our flexible study options and several online learning tools are all designed to help maximize your study time and help you focus on your weak areas.
                   </P>
                 </div>
                 <div className="member tanner">
-                  <div className="member-image">
-                    <div className="inner" />
-                  </div>
-                  <H3>Tanner Linsley</H3>
-                  <H6>Front-End Engineer</H6>
+                  
+                  <H3>Guarantee</H3>
                   <P>
-                    Tanner is obsessive and passionate about Javascript, React, UI/UX, Data
-                    Visualization and all things web. He loves problem solving and design, and
-                    considers Github his playground. Tanner is always on the edge of the modern
-                    software stack loves developing new solutions, frameworks, and systems for
-                    complex problems. He is a core contributor to Chart.js, the most popular
-                    charting library in the world, and also wrote Jumpsuit.js, which was initially
-                    written for Nozzle, but now it's used by thousands of people to build web apps.
+                   We are confident that our approach, our dedicated training philosophy and our full time support combined with your hard work will lead you to success.
                   </P>
                 </div>
               </div>
