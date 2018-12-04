@@ -3,34 +3,19 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 
-import universal, { setHasBabelPlugin } from 'react-universal-component'
-
 import { cleanPath } from 'react-static'
 
-
-
-setHasBabelPlugin()
-
-const universalOptions = {
-  loading: () => null,
-  error: props => {
-    console.error(props.error);
-    return <div>An error occurred loading this page's template. More information is available in the console.</div>;
-  },
-}
-
-  const t_0 = universal(import('../../src/containers/Home'), universalOptions)
-const t_1 = universal(import('../../src/containers/RankTrackerComparison'), universalOptions)
-const t_2 = universal(import('../../src/containers/Features'), universalOptions)
-const t_3 = universal(import('../../src/containers/Pricing'), universalOptions)
-const t_4 = universal(import('../../src/containers/About'), universalOptions)
-const t_5 = universal(import('../../src/containers/Onboarding'), universalOptions)
-const t_6 = universal(import('../../src/containers/OnboardingThanks'), universalOptions)
-const t_7 = universal(import('../../src/containers/Devblog'), universalOptions)
-const t_8 = universal(import('../../src/containers/DevblogPost'), universalOptions)
-const t_9 = universal(import('../../src/containers/DevblogTag'), universalOptions)
-const t_10 = universal(import('../../src/containers/NotFound'), universalOptions)
-
+import t_0 from '../../src/containers/Home'
+import t_1 from '../../src/containers/RankTrackerComparison'
+import t_2 from '../../src/containers/Features'
+import t_3 from '../../src/containers/Pricing'
+import t_4 from '../../src/containers/About'
+import t_5 from '../../src/containers/Onboarding'
+import t_6 from '../../src/containers/OnboardingThanks'
+import t_7 from '../../src/containers/Devblog'
+import t_8 from '../../src/containers/DevblogPost'
+import t_9 from '../../src/containers/DevblogTag'
+import t_10 from '../../src/containers/NotFound'
 
 // Template Map
 global.componentsByTemplateID = global.componentsByTemplateID || [
